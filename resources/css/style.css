@@ -61,8 +61,26 @@ html {
 
   /* Header Mobile */
 
-  @media screen only and (max-width: 480px;){
+.mobile-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.mobile-header img {
+  width: 15%;
+  height: auto;
+}
+@media only screen and (min-width: 500px) {
+  .mobile-header {
+    display: none;
+  }
+}
 
+  @media only screen and (max-width: 500px) {
+.left-header,
+.right-header {
+  display: none;
+}
   }
 
 
@@ -121,6 +139,38 @@ max-width: 100%;
 .button:hover {
   background-color: #696A75;
 }
+
+   /* Mobile 1st banner */
+   @media only screen and (max-width: 500px) {
+     .banner-first-container {
+       display: block;
+     }
+     .banner-first-container .banner-img,
+     .banner-first-info {
+       width: 100%;
+       margin : 0;
+       max-width: 100%;
+     }
+
+     .banner-first-info div h1 {
+       font-size: 2.5rem;
+       margin-left: 1rem;
+       margin-top: 1.5rem;
+     }
+
+     .banner-first-info div h4 {
+       margin-left: 1rem;
+     }
+
+     .button {
+       width: 80%;
+       margin: 2rem auto 0 auto;
+       position: relative;
+       bottom: 1rem;
+     }
+   }
+
+
 
 
   /* 2nd Banner */
@@ -226,6 +276,39 @@ color: dodgerblue;
 }
 
 
+    /* 2nd banner moblie */
+
+@media only screen and (max-width: 500px) {
+.left-column{
+  display: none;
+}
+
+.right-column,
+.icon {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
+.icon img {
+ width: 95%;
+}
+
+.tab-nav {
+  display: block;
+  border: none;
+  padding-top: 1rem;
+  margin-left: 1rem;
+}
+
+.tab-info {
+  padding-left: 1rem;
+}
+
+}
+
+
+
 /* 3rd Banner  */
 
 
@@ -294,6 +377,48 @@ color: dodgerblue;
   height: auto;
   max-width: 100%;
 }
+
+
+
+    /*3rd banner mobile*/
+
+@media only screen and (max-width: 500px) {
+  .banner-third-container .banner-holder {
+    padding: 0;
+  }
+
+  .banner-third-container {
+    position: relative;
+    top: 6rem;
+    padding-top: 1rem;
+  }
+
+  .tab-menu .course-image,
+  .tab-menu .tab-info {
+    display: none;
+  }
+
+  .tab-menu {
+    height: 50%;
+    background-color: transparent;
+    max-width: 100%;
+  }
+
+.tab-title {
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: #ABA596;
+}
+  .tab-menu-container {
+    display: block;
+    padding: 1rem;
+  }
+
+}
+
+
+
+
 
 
                   /* Final Banner */
@@ -397,6 +522,28 @@ color: dodgerblue;
 }
 
 
+
+
+    /* Final banner mobile  */
+
+@media only screen and (max-width: 500px) {
+  .video-links,
+  .final-banner-text {
+    display: none;
+  }
+
+  .video {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .final-banner-holder{
+    padding: 1rem 0;
+  }
+}
+
+
+
         /*footer */
 .footer {
   border-top: solid 1px slategray;
@@ -429,4 +576,16 @@ color: dodgerblue;
 
 .right ul li a:hover {
   text-decoration: underline;
+}
+
+
+    /* footer mobile  */
+
+@media only screen and (max-width: 500px) {
+
+  .left {
+    font-size: 1rem;
+  }
+
+
 }
